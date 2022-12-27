@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de8bbe3c-504c-4335-b22f-3b475c6cfd95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10.sql" afterDir="false" />
+    <list default="true" id="de8bbe3c-504c-4335-b22f-3b475c6cfd95" name="Changes" comment="готово">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f/storage_v2/_src_/database/postgres.edMnLQ/schema/lab10.bHgfBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f/storage_v2/_src_/database/postgres.edMnLQ/schema/lab10.bHgfBg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4107eeca-0938-4a2c-ad5e-c482d36a8f7f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab10.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/79536/IdeaProjects/lab10",
     "node.js.detected.package.eslint": "true",
@@ -118,8 +113,26 @@
       <workItem from="1671977883200" duration="1397000" />
       <workItem from="1671979298041" duration="7133000" />
       <workItem from="1671999224985" duration="1826000" />
-      <workItem from="1672054607928" duration="1306000" />
+      <workItem from="1672054607928" duration="1793000" />
+      <workItem from="1672077036092" duration="1069000" />
+      <workItem from="1672119706403" duration="1871000" />
+      <workItem from="1672123267171" duration="4662000" />
     </task>
+    <task id="LOCAL-00001" summary="готово">
+      <created>1672056103877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672056103877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="готово">
+      <created>1672056150878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672056150878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +148,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="готово" />
+    <option name="LAST_COMMIT_MESSAGE" value="готово" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

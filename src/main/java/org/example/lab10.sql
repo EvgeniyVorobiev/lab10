@@ -25,11 +25,15 @@ constraint fkey_stud_sub foreign key(subject_id) references subjects(id)
     on delete cascade on update cascade
 );
 
+
+
 insert into students (name, passport_series, passport_number) values ('Евгений', 666, 666);
 insert into students (name, passport_series, passport_number) values ('Данила', 3232, 545675);
 insert into students (name, passport_series, passport_number) values ('Виктория', 8247, 6217653);
 insert into students (name, passport_series, passport_number) values ('Олег', 1126, 087876);
+insert into students (name, passport_series, passport_number) values ('Гело', 6211, 677670);
 insert into students (name, passport_series, passport_number) values ('Артём', 2437, 567678);
+insert into students (name, passport_series, passport_number) values ('Мётра', 2237, 567978);
 --insert into students (name, passport_series, passport_number) values ('Никита', 3232, 545675);
 
 insert into subjects (subject_name) values ('Технологии программирования');
@@ -39,8 +43,8 @@ insert into subjects (subject_name) values ('Математика');
 
 --insert into progress (student_id, subject_id, mark) values (1, 1, 1);
 insert into progress (student_id, subject_id, mark) values (1, 1, 5);
-insert into progress (student_id, subject_id, mark) values (1, 2, 3);
-insert into progress (student_id, subject_id, mark) values (1, 3, 2);
+insert into progress (student_id, subject_id, mark) values (1, 2, 5);
+insert into progress (student_id, subject_id, mark) values (1, 3, 5);
 insert into progress (student_id, subject_id, mark) values (1, 4, 5);
 insert into progress (student_id, subject_id, mark) values (2, 1, 4);
 insert into progress (student_id, subject_id, mark) values (2, 2, 3);
@@ -58,6 +62,14 @@ insert into progress (student_id, subject_id, mark) values (5, 1, 5);
 insert into progress (student_id, subject_id, mark) values (5, 2, 4);
 insert into progress (student_id, subject_id, mark) values (5, 3, 2);
 insert into progress (student_id, subject_id, mark) values (5, 4, 5);
+insert into progress (student_id, subject_id, mark) values (6, 1, 5);
+insert into progress (student_id, subject_id, mark) values (6, 2, 5);
+insert into progress (student_id, subject_id, mark) values (6, 3, 5);
+insert into progress (student_id, subject_id, mark) values (6, 4, 5);
+insert into progress (student_id, subject_id, mark) values (7, 1, 5);
+insert into progress (student_id, subject_id, mark) values (7, 2, 5);
+insert into progress (student_id, subject_id, mark) values (7, 3, 5);
+insert into progress (student_id, subject_id, mark) values (7, 4, 5);
 
 select stud.name, subj.subject_name, p.mark
 from students as stud
@@ -96,9 +108,15 @@ as $$
 
 select  get_avg_mark(subj.subject_name), subj.subject_name, stud.name, p.mark from students as stud
     join progress as p on stud.id = p.student_id
-    join subjects as subj on p.subject_id = subj.id where subj.subject_name = 'Технологии программирования'
-                                                    or subj.subject_name = 'Управление данными'
-group by p.mark, stud.name, subj.subject_name having p.mark > get_avg_mark(subj.subject_name);
+    join subjects as subj on p.subject_id = subj.id
+group by p.mark, stud.name, subj.subject_name having (p.mark > get_avg_mark(subj.subject_name) and subj.subject_name = 'Технологии программирования')
+   or (p.mark > get_avg_mark(subj.subject_name) and subj.subject_name = 'Управление данными');
 
 
+select stud.name, subj.subject_name, p.mark
+from students as stud
+         join progress as p on stud.id = p.student_id
+         join subjects as subj on p.subject_id = subj.id where p.mark > 3 group by stud.name, subj.subject_name, p.mark;
+
+--список студентов, которые выходят на стипендию
 --список студентов у которых управление данными и тп выше среднего по группе
